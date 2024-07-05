@@ -1,0 +1,429 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --heading-font:'Noto Serif', Serif;
+    --paragraph-font:'Roboto', Serif;
+}
+/*navigation*/
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: #fff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+
+}
+
+nav img {
+    width: 100px;
+    cursor: pointer;
+}
+
+nav .Navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .Navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .Navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .Navigation ul li a:hover {
+    color: rgb(7, 146, 226)
+
+}
+
+
+/* Home */
+#home {
+    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(15, 15, 15, 0.5)), url("Images/wallpape.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    height: 10vh;
+    font-family: var(--heading-font);
+}
+
+#home p {
+    color: #fff;
+    width: 50%;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-family: var(--paragraph-font);
+    padding: 15px;
+}
+
+#home .btn {
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue {
+    color: #fff;
+    background: rgb(7, 146, 226);
+}
+
+#home a.blue:hover {
+    color:  rgb(7, 146, 226);
+    background: #fff;
+}
+
+#home a.magenta {
+    color: #fff;
+    background: orange;
+    transition: 0.3s ease;
+}
+
+#home a.magenta:hover {
+    color: orange;
+    background: #fff;
+} 
+
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+/* Enhanced h1 Styles */
+h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #0056b3;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Awesome Features */
+#feature {
+    padding: 8vw 8vw 0 8vw;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+#feature .fea-base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+#feature .fea-box {
+    background: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+#feature .fea-base i {
+    font-size: 40px;
+    color: orange;
+}
+
+#feature .fea-box h3 {
+    color: #0056b3;
+    margin-top: 1rem;
+}
+
+#feature .fea-box p {
+    color: #666;
+}
+
+/* Courses */
+
+#courses{
+    padding: 8vw 8vw 0 8vw;
+}
+
+#courses .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    grid-gap: 1rem;
+}
+
+#courses .courses{
+    background-color: rgb(243, 243, 245);
+    height: 100%;
+}
+
+#courses .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#courses  a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 4rem;
+}
+
+#courses .course-box a.read {
+    color: #fff;
+    background: rgb(190, 192, 194);
+    transition: 0.3s ease;
+}
+
+#courses .course-box a.read:hover{
+    color: rgb(47, 0, 255);
+    background: #fff;
+}
+
+#courses .course-box h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    margin: 1rem;
+}
+
+#courses .course-box p{
+    margin: 1rem;
+}
+
+/* What We Offer */
+#offer {
+    padding: 8vw 8vw 0 8vw;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+
+#offer .offer-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+#offer .offer-base {
+    background: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+#offer .offer-base h3 {
+    color: #333;
+    margin-top: 1rem;
+}
+
+#offer .offer-base p {
+    color: #666;
+}
+
+/* footer */
+#connect{
+    display: flex;
+    background-color: rgb(26, 25, 25);
+    justify-content: space-between;
+	flex-direction: row;
+    margin-top: 2rem;
+}
+
+#connect h1{
+    text-align: left;
+    font-size: 2rem;
+    margin: 1rem;
+    color: #fff;
+    font-family: var(--heading-font);
+}
+
+#connect .connect-base a i{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 10px;
+    padding-top: 25px;
+}
+
+#connect .connect-base a{
+    justify-content: flex-end;
+    height: 40px;
+    flex-direction: row;
+    margin: 1rem;
+} 
+
+#about{
+    margin-top: 0%;
+}
+
+footer{
+    background-color:rgb(222, 225, 226);
+}
+
+#about .about-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px,1fr));
+    grid-gap: 1rem;
+}
+
+#about .about-box h3{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    margin: 1rem;
+}
+
+#about .about-box p{
+    margin: .5rem;
+    color: black;
+}
+
+#about .about-base{
+
+    color: black;
+}
+
+#about .about-link a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#about .about-link a:hover{
+    color: #fff;
+}
+
+#about .about-box .about-icon i{
+    color: #fff;
+}
+
+#year{
+    background: var(--primary-color);
+    text-align: center;
+    color: black;
+}
+
+/* Mission and Vision */
+#mission {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#mission .mission-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+#mission .mission-base {
+    background: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px
+}    
+
+/* Executive Members */
+#executive {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+
+.executive-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+    padding-top: 2rem;
+}
+
+.executive-member {
+    text-align: center;
+}
+
+.executive-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.executive-member h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 51);
+    padding: 0.5rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.executive-member p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(70, 70, 87);
+    font-family: var(--paragraph-font);
+}

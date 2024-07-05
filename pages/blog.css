@@ -1,0 +1,217 @@
+/* Blog Page Styles */
+/* Home */
+#home {
+    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(15, 15, 15, 0.5)), url("Images/exco.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    height: 10vh;
+    font-family: var(--heading-font);
+}
+
+#home p {
+    color: #fff;
+    width: 50%;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-family: var(--paragraph-font);
+    padding: 15px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #0056b3;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+#blog {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#blog p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blog-post {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+    margin: 1rem;
+    flex: 1;
+    min-width: 250px;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post .read-more {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.blog-post .read-more:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+#connect{
+    display: flex;
+    background-color: rgb(26, 25, 25);
+    justify-content: space-between;
+	flex-direction: row;
+    margin-top: 2rem;
+}
+
+#connect h1{
+    text-align: left;
+    font-size: 2rem;
+    margin: 1rem;
+    color: #fff;
+    font-family: var(--heading-font);
+}
+
+#connect .connect-base a i{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 10px;
+    padding-top: 25px;
+}
+
+#connect .connect-base a{
+    justify-content: flex-end;
+    height: 40px;
+    flex-direction: row;
+    margin: 1rem;
+} 
+
+#about{
+    margin-top: 0%;
+}
+
+footer{
+    background-color:rgb(222, 225, 226);
+}
+
+#about .about-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px,1fr));
+    grid-gap: 1rem;
+}
+
+#about .about-box h3{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    margin: 1rem;
+}
+
+#about .about-box p{
+    margin: .5rem;
+    color: black;
+}
+
+#about .about-base{
+
+    color: black;
+}
+
+#about .about-link a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#about .about-link a:hover{
+    color: #fff;
+}
+
+#about .about-box .about-icon i{
+    color: #fff;
+}
+
+#year{
+    background: var(--primary-color);
+    text-align: center;
+    color: black;
+}
+
+#social-feeds {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between the feeds */
+    margin-top: 2rem;
+}
+
+.feed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.fb-page, .twitter-feed {
+    border: 1px solid #ddd; /* Optional: Add a border around the feeds */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.twitter-feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
